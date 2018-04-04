@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="right"
+    android:gravity="right"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentTop="false"
+        android:layout_centerVertical="true">
+
+        <ImageView
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_location_svg"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/black"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="سیستم موقعیت یاب"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/black"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="جهت یافتن مسیر دقیق نیاز به دسترسی به مکان یاب هست"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="false"
+        android:layout_gravity="center"
+        android:layout_marginTop="32dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_no"
+            android:layout_width="wrap_content"
+            android:layout_height="52dp"
+            android:layout_weight="2"
+            android:layout_marginRight="2dp"
+            android:background="#D6D6D6"
+            android:padding="5dp"
+            android:text="نیازی نیست"
+            android:textColor="#777777"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_yesexit"
+            android:layout_width="wrap_content"
+            android:layout_height="52dp"
+            android:layout_weight="2"
+            android:background="#eb4042"
+            android:padding="5dp"
+            android:text="اجازه دسترسی به مکان یاب"
+            android:layout_marginLeft="2dp"
+            android:textColor="#ffffff"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+
+        <!--<Button-->
+        <!--android:id="@+id/btn_mobile"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginRight="1dp"-->
+        <!--android:layout_weight="1"-->
+        <!--android:background="#eb4042"-->
+        <!--android:padding="5dp"-->
+        <!--android:text="اینترنت موبایل"-->
+        <!--android:textColor="#ffffff" />-->
+
+        <!--<Button-->
+        <!--android:id="@+id/btn_wifi"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="1"-->
+        <!--android:background="#eb4042"-->
+        <!--android:padding="5dp"-->
+        <!--android:text="اینترنت WI-FI"-->
+        <!--android:textColor="#ffffff" />-->
+    </LinearLayout>
+
+
+</LinearLayout>

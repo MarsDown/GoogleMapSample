@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="72dp"
+        android:background="@drawable/ic_bubble_svg"
+        android:padding="8dp"
+        >
+
+        <!--<ImageView-->
+            <!--android:layout_width="110dp"-->
+            <!--android:layout_height="110dp"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_alignParentEnd="true"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:src="@drawable/ic_bubble_svg" />-->
+
+
+        <TextView
+            android:id="@+id/txtdistance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text=""
+            android:textColor="@android:color/white"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/txtTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtdistance"
+          android:layout_centerHorizontal="true"
+            android:text=""
+            android:layout_marginTop="4dp"
+            android:textColor="@android:color/white"
+            android:textSize="10dp" />
+
+    </RelativeLayout>
+
+
+    <!--<TextView-->
+    <!--android:id="@+id/txtCaption"-->
+    <!--android:layout_marginTop="4dp"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:gravity="center"-->
+    <!--android:text=""-->
+    <!--android:textColor="@color/accent_500"-->
+    <!--android:textSize="14dp"-->
+    <!--android:textStyle="bold"-->
+    <!--/>-->
+
+</LinearLayout>

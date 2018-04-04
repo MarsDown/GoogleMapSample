@@ -1,0 +1,154 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ActivityMain">
+
+
+    <LinearLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:gravity="right"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:gravity="center|right"
+            android:textColor="@android:color/white" />
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="right"
+            android:background="@android:color/transparent"
+            android:foregroundGravity="right"
+            android:src="@drawable/ic_back_svg" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/TDoctorRow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:gravity="right"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="8dp">
+
+
+            <LinearLayout
+                android:id="@+id/lyCar"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="4dp"
+                android:background="@drawable/card_edge_white_map"
+                android:gravity="center"
+                android:padding="8dp">
+
+                <TextView
+                    android:id="@+id/txtTimeCar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:text=""
+                    android:textColor="@color/colorPrimary"
+                    android:visibility="gone" />
+
+                <ImageButton
+                    android:id="@+id/btnCar"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="right"
+                    android:background="@android:color/transparent"
+                    android:foregroundGravity="right"
+                    android:src="@drawable/ic_directions_car_blue" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/lyWalk"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="4dp"
+                android:background="@drawable/card_edge_blue_map"
+                android:gravity="center"
+                android:padding="8dp">
+
+                <TextView
+                    android:id="@+id/txtTimeWalk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:text=""
+                    android:textColor="@android:color/white"
+                    android:visibility="gone" />
+
+
+                <ImageButton
+                    android:id="@+id/btnWalk"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/ic_directions_walk_white" />
+
+
+            </LinearLayout>
+
+
+            <!--<ImageButton-->
+            <!--android:id="@+id/btnRefreshedPoint"-->
+            <!--android:layout_width="48dp"-->
+            <!--android:layout_height="48dp"-->
+            <!--android:layout_gravity="left"-->
+            <!--android:background="@color/colorWhite"-->
+            <!--android:foregroundGravity="left"-->
+            <!--android:visibility="gone"-->
+            <!--android:src="@drawable/ic_refresh_svg" />-->
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/TDoctorRow"
+        >
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".ActivityMain"
+            />
+
+    </FrameLayout>
+
+
+
+
+</RelativeLayout>
